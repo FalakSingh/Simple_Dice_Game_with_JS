@@ -24,5 +24,7 @@ function changePage(){
   document.querySelector(".p2").setAttribute("src", "images/dice" + player_2 + ".png");
 
 }
-
-changePage();
+if (window.performance.navigation.type === 1) {
+  changePage();
+}
+ 
